@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header-imgnav {
+    width: 100vw;
+    height: 100vh;
+    background: url('../imagenes/teamOffice.png') center/cover no-repeat;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+}
+
+.header-imgnav::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.5); /* Ajusta el valor para más o menos oscuridad */
+    z-index: 1;
+}
+
+.nav-imgnav {
+    position: relative;
+    z-index: 2;
+}
+
+
+
+
+.nav-imgnav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    background: #d4d4d4;
+    border-radius: 18px 18px;
+    padding: 28px 300px;
+    margin-top: 40px;
+}
+
+.nav-imgnav img {
+    height: 40px;
+    width: auto;
+    margin-right: 40px;
+}
+
+.nav_section {
+    text-decoration: none;
+    color: #0077b6;
+    font-weight: 500;
+    font-size: 25px;
+    transition: color 0.2s;
+}
+
+.nav_section:hover {
+    color: #023e8a;
+}
+
+.header-slogan {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    z-index: 2;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+
+.info{
+    width: 60vw;
+    height: 500px;
+    margin: auto;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.info-title{
+    font-size: 40px;
+}
+
+.info-container{
+    width: 100%;
+    height: 300px;
+    font-size: 20px;
+    margin:40px 30px;
+}
+
+.info-image > .info-image-container {
+    width: 80%;
+    height: 90.5%;
+    margin: auto;
+    margin-left: 100px;
+    padding-left: 0;
+    border-radius: 30px;
+}
+
+
+.tienda{
+    width: 60vw;
+    height: auto;
+    margin: auto;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0;
+}
+
+
+.tienda-container{
+    margin-top: 0;
+    margin-right: 80px;
+    
+}
+
+.tienda-title{
+    font-size: 45px;
+    background-image: url('../imagenes/confeti.png');
+    height: 50vh;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.tienda-image > .tienda-image-container {
+    width: 80%;
+    height: 90.5%;
+    margin: auto;
+    margin-left: 40px;
+    padding-left: 0;
+    border-radius: 30px;
+}
+
+.button-container {
+    text-decoration: none;
+    position: relative;
+    font-size: 1rem;
+    font-weight: 600;
+    color:  rgb(100, 108, 255);
+    cursor: pointer;
+    padding: 1rem 2rem;
+    background: none;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(100, 108, 255);
+    border-image: initial;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: 0.3s;
+
+}
+
+.liquid{
+    background: linear-gradient(#3943f5 0 0) no-repeat calc(200% - var(--p, 0%)) 100% / 200% var(--p, 0.2em);
+    transition: 0.3s var(--t, 0s), background-position 0.3s calc(0.3s - var(--t, 0s));
+}
+
+.button-container.liquid:hover {
+    --p: 100%;
+    --t: 0.3s;
+  color: white; /* opcional, para que contraste con el fondo */
+}
+
+
+
