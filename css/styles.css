@@ -4,6 +4,8 @@ body {
 }
 
 .header-imgnav {
+    margin: 0;
+    padding: 0;
     width: 100vw;
     height: 100vh;
     background: url('../imagenes/teamOffice.png') center/cover no-repeat;
@@ -79,6 +81,7 @@ body {
     height: 500px;
     margin: auto;
     margin-top: 30px;
+    margin-bottom: 40px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
@@ -104,6 +107,8 @@ body {
 }
 
 
+
+
 .tienda{
     width: 60vw;
     height: auto;
@@ -116,9 +121,19 @@ body {
 
 
 .tienda-container{
-    margin-top: 0;
-    margin-right: 80px;
-    
+    .info-container {
+    width: 100%;
+    height: 300px;
+    font-size: 20px;
+    margin: 40px 30px;
+}
+}
+
+.info-container img {
+    width: 300px; /* Mantén el ancho fijo */
+    height: auto; /* Ajusta la altura automáticamente para mantener las proporciones */
+    display: block; /* Opcional: para centrar la imagen */
+    margin: 0 auto; /* Opcional: para centrar la imagen */
 }
 
 .tienda-title{
@@ -147,7 +162,7 @@ body {
     font-weight: 600;
     color:  rgb(100, 108, 255);
     cursor: pointer;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
     background: none;
     border-width: 2px;
     border-style: solid;
@@ -167,8 +182,118 @@ body {
 .button-container.liquid:hover {
     --p: 100%;
     --t: 0.3s;
-  color: white; /* opcional, para que contraste con el fondo */
+    color: white; 
 }
+
+.opinions-title{
+    font-size: 1.2rem;
+    color: #2662fA;
+    text-align: center;
+    margin: 40px 0 0 0;
+}
+
+.opinions-span{
+    margin: 0 0 40px 0;
+    font-size: 2.2rem;
+    text-align: center;
+    color: #04091E;
+    font-weight: 900;
+}
+
+.opinions {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 10px auto;
+    height:  300px;
+}
+
+.opinions-box {
+    background-color: #f6f6f6;
+    border-radius: 8px;
+    height: auto;
+    width: auto; 
+    display: grid;
+    place-items: center;
+}
+
+.opinions-image{
+    border-radius: 60%;
+    text-align: center;
+    margin: 20px auto 10px auto;
+    padding: auto;
+}
+
+.opinions-name{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.opinions-details{
+    color: #747681;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 0 18px;
+    margin: 0;
+}
+
+.stars-image {
+    filter: drop-shadow(4px 6px 12px rgba(255, 252, 77, 0.704)); 
+    border-radius: 8px; 
+}
+
+.sales-team {
+    width: 60vw;
+    height:300px ;
+    margin: 0px auto 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+.sales-title {
+    font-size: 2rem;
+    text-align: center;
+    align-items: center;
+    margin: 160px 0 30px 0;
+    font-weight: 900;
+    color: #2662fA;
+}
+
+.sales-image {
+    background-image: url("../imagenes/salesUno.png");
+    height: 300px;
+    background-size: cover;
+    background-position: center; 
+}
+
+.profileDos{
+    background-image: url("../imagenes/salesDos.png");
+}
+
+.profileTres{
+    background-image: url("../imagenes/salesTres.png");
+}
+
+@media (max-width: 768px) {
+    .opinions-box {
+        flex: 1 1 calc(50% - 20px); 
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .opinions-box {
+        flex: 1 1 100%; 
+        max-width: 100%;
+    }
+}
+
+
+
+
 
 
 
